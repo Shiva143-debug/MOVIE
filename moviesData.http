@@ -11,7 +11,7 @@ Content-Type:application/json
 }
 
 ###
-GET http://localhost:5000/movies/1/
+GET http://localhost:5000/movies/54/
 ###
 
 PUT http://localhost:5000/movies/54/
@@ -19,7 +19,7 @@ Content-Type:application/json
 
 {
   "directorId": 24,
-  "movieName": "Thor",
+  "movieName": "Thore",
   "leadActor": "Christopher Hemsworth"
 }
 ###

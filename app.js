@@ -42,7 +42,7 @@ const convertDbObjectToResponseObject = (dbObject) => {
 app.get("/movies/", async (request, response) => {
   const getMoviesQuery = `
     SELECT
-      movie_name as movieName
+      movie_id as movieId,movie_name as movieName
     FROM
       movie
     ORDER BY
@@ -105,7 +105,7 @@ app.delete("/movies/:movieId/", async (request, response) => {
 app.get("/directors/", async (request, response) => {
   const getDirectorsQuery = `
     SELECT
-      director_id directorId,director_name as directorName
+      director_id as directorId,director_name as directorName
     FROM
       director
     ORDER BY
